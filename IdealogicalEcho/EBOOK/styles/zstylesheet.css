@@ -58,19 +58,27 @@ h1.toc
 {
 	margin: 0em;
 	font-size: 1.4em;
+	font-weight: bold;
 }
 
 h2.toc
 {
 	margin: 0em;
 	font-size: 1.4em;
-	font-variant: small-caps;
+	font-weight: normal;
+	/*font-variant: small-caps;*/
 }
 
 h1.indent, h2.indent
 {
 	margin: 0em;
 	text-indent: 1em;
+}
+
+h1.indent2, h2.indent2
+{
+	margin: 0em;
+	text-indent: 2em;
 }
 
 /*Sub Headings*/
