@@ -37,11 +37,12 @@ def GenOPF():
     #Write out all the pages in the book.
     #Count all the instances within the pages block.
 
-    #print len(data["pages"])
-    
-    #while (i < page):
+    #currentpage = 0
+    #totalpages = #Number of pages
+   
+    #while (totalpages < currentpage):
         #opf.write('   <item href="" id="" media-type="application/xhtml+xml"/>\n')
-        #page = page + 1
+        #currentpage = currentpage + 1
     
     opf.write(' </manifest>\n')
 
@@ -52,10 +53,10 @@ def GenOPF():
     #Need to increment for each page.
     print (data["pages"])
     
-    #pagecount = 1 #Intialise to one for the first page.
-    #while pagecount < do:
+    #currentpage = 0
+    #while (totalpages < currentpage):
         #opf.write('  <itemref idref="'+ pagecount +'"/>\n')
-        #pagecount = pagecount + 1
+        #currentpage = currentpage + 1
     
 
     opf.write(' </spine>\n')
