@@ -16,21 +16,21 @@
     <item href="images/ouyae-book.jpg" id="at" media-type="image/jpeg"/>
     <item href="images/steammachinee-book.jpg" id="au" media-type="image/jpeg"/>
     <item href="bookcover.xhtml" id="cover" media-type="application/xhtml+xml"/>
-    <item href="title.xhtml" id="a" media-type="application/xhtml+xml"/>
-    <item href="license.xhtml" id="b" media-type="application/xhtml+xml"/>
-    <item href="preface.xhtml" id="c" media-type="application/xhtml+xml"/>
-    <item href="toc.xhtml" id="d" media-type="application/xhtml+xml"/>
-    <item href="article.xhtml" id="e" media-type="application/xhtml+xml"/>
-    <item href="bibliography.xhtml" id="f" media-type="application/xhtml+xml"/>
+    <item href="title.xhtml" id="1" media-type="application/xhtml+xml"/>
+    <item href="license.xhtml" id="2" media-type="application/xhtml+xml"/>
+    <item href="preface.xhtml" id="3" media-type="application/xhtml+xml"/>
+    <item href="toc.xhtml" id="4" media-type="application/xhtml+xml"/>
+    <item href="article.xhtml" id="5" media-type="application/xhtml+xml"/>
+    <item href="bibliography.xhtml" id="6" media-type="application/xhtml+xml"/>
     <item href="styles/zstylesheet.css" id="av" media-type="text/css"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover"/>
-    <itemref idref="a"/>
-    <itemref idref="b"/>
-    <itemref idref="c"/>
-    <itemref idref="d"/>
-    <itemref idref="e"/>
-    <itemref idref="f"/>
+    <itemref idref="1"/>
+    <itemref idref="2"/>
+    <itemref idref="3"/>
+    <itemref idref="4"/>
+    <itemref idref="5"/>
+    <itemref idref="6"/>
   </spine>
 </package>

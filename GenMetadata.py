@@ -6,9 +6,10 @@
 #JSON extraction magic
 
 import json
+from collections import OrderedDict
 
 with open("metadata.json") as json_file:
-    data = json.load(json_file)
+    data = json.load((json_file), object_pairs_hook=OrderedDict) #For some reason the order is randomised, this preserves the order.
 
 #Create a compatible content.opf from scratch.
 def GenOPF():
@@ -32,18 +33,31 @@ def GenOPF():
     opf.write(' <manifest>\n')
     opf.write('  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>\n')
     opf.write('  <item href="images/' + data["epubCover"] +'" id="main_cover_image" media-type="image/jpeg"/>\n')
-    #opf.write('   <item href="bookcover.xhtml" id="cover" media-type="application/xhtml+xml"/>\n')
-
+    
     #Write out all the pages in the book.
-    #for(["pages"])
     #Count all the instances within the pages block.
+
+    #print len(data["pages"])
+    
+    #while (i < page):
+        #opf.write('   <item href="" id="" media-type="application/xhtml+xml"/>\n')
+        #page = page + 1
     
     opf.write(' </manifest>\n')
 
     #Spine tags
     opf.write(' <spine toc="ncx">\n')  
     opf.write('  <itemref idref="cover"/>\n')
+
     #Need to increment for each page.
+    print (data["pages"])
+    
+    #pagecount = 1 #Intialise to one for the first page.
+    #while pagecount < do:
+        #opf.write('  <itemref idref="'+ pagecount +'"/>\n')
+        #pagecount = pagecount + 1
+    
+
     opf.write(' </spine>\n')
 
     #End of file

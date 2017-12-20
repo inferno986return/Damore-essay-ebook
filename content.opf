@@ -12,7 +12,6 @@
  <manifest>
   <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
   <item href="images/cover.jpg" id="main_cover_image" media-type="image/jpeg"/>
-   <item href="bookcover.xhtml" id="cover" media-type="application/xhtml+xml"/>
  </manifest>
  <spine toc="ncx">
   <itemref idref="cover"/>
