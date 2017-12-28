@@ -1,12 +1,13 @@
 {
 		"comment1": "Metadata.json - Insert the e-book's metadata here. WIP",
 
-		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover is currently unused but added for futureproofing.",
+		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
 		"epubCover": "cover.jpg",
 		"mobiCover": "cover.jpg",
 		"fileName": "IdealogicalEcho",
 		"epubVersion": "2.0.1",
 		"textPresentation": "Reflowable",
+		"generateKindle": "no",
 
 		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "Google's Idealogical Echochamber",
