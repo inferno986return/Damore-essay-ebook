@@ -8,10 +8,10 @@ import json
 import zipfile
     
 with open('metadata.json') as json_file:
-        data = json.load(json_file)
+    data = json.load(json_file)
 
 #The ePub standard requires deflated compression and a compression order.
-zf = zipfile.ZipFile(data["fileName"] + '.epub', mode='w', compression=zipfile.ZIP_STORED)
+zf = zipfile.ZipFile(data["fileName"] + '.epub', mode='w', compression=zipfile.ZIP_DEFLATED)
 
 zf.write(data["fileName"] + '/mimetype')
 
