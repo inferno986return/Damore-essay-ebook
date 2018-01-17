@@ -10,13 +10,13 @@
 		"generateKindle": "no",
 
 		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
-		"title": "Google's Idealogical Echochamber",
+		"title": "Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion",
 		"creator": "James Damore",
 		"subject": "Academic",
 		"publisher": "Hal Motley",
 		"ISBN": "-",
 		"language": "en",
-		"rights": "Creative-Commons SA",
+		"rights": "Creative Commons BY-SA 4.0",
 
 		"comment4": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation, third is the page name and fourth is file itself.",
 			"pages": [

@@ -12,7 +12,7 @@
  <manifest>
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
     <item href="images/graph.jpg" id="graph" media-type="image/jpeg"/>
-    <item href="bookcover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+    <item href="bookcover.xhtml" id="0" media-type="application/xhtml+xml"/>
     <item href="title.xhtml" id="1" media-type="application/xhtml+xml"/>
     <item href="indicia.xhtml" id="2" media-type="application/xhtml+xml"/>
     <item href="license.xhtml" id="3" media-type="application/xhtml+xml"/>
@@ -22,7 +22,7 @@
     <item href="styles/zstylesheet.css" id="css" media-type="text/css"/>
   </manifest>
   <spine toc="ncx">
-    <itemref idref="cover"/>
+    <itemref idref="0"/>
     <itemref idref="1"/>
     <itemref idref="2"/>
     <itemref idref="3"/>
