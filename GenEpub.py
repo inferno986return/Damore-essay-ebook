@@ -20,7 +20,7 @@ for dirname, subdirs, files in os.walk(data["fileName"] + '/META-INF'):
     for filename in files:
         zf.write(os.path.join(dirname, filename))
 
-for dirname, subdirs, files in os.walk(data["fileName"] + '/EBOOK'):
+for dirname, subdirs, files in os.walk(data["fileName"] + '/OEBPS'):
     zf.write(dirname)
     for filename in files:
         zf.write(os.path.join(dirname, filename))
