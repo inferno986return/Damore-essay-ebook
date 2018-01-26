@@ -97,7 +97,7 @@ h1.subheading
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: left;
-	margin-top: 0em;
+	margin-top: 1em;
 	margin-bottom: 0em;
 }
 
@@ -107,7 +107,7 @@ h2.subheading
 	font-weight: bold;
 	text-align: left;
 	font-variant: small-caps;
-	margin-top: 0em;
+	margin-top: 1em;
 	margin-bottom: 0em;
 }
 
