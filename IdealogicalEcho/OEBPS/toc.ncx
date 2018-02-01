@@ -33,18 +33,30 @@
         <text>Contents</text>
       </navLabel>
       <content src="toc.xhtml" />
-      <navPoint id="005" class="h1" playOrder="5">
-        <navLabel>
-          <text>Foreword</text>
-        </navLabel>
-        <content src="foreword.xhtml" />
-      </navPoint>
+    </navPoint>
+    <navPoint id="005" class="h1" playOrder="5">
+      <navLabel>
+        <text>Foreword</text>
+      </navLabel>
+      <content src="foreword.xhtml" />
     </navPoint>
     <navPoint id="006" class="h1" playOrder="6">
       <navLabel>
-        <text>Article</text>
+        <text>Lawsuit</text>
       </navLabel>
-      <content src="article.xhtml" />
+      <content src="lawsuit.xhtml" />
+    </navPoint>
+    <navPoint id="007" class="h1" playOrder="7">
+      <navLabel>
+        <text>Exhibit A</text>
+      </navLabel>
+      <content src="exhibita.xhtml" />
+    </navPoint>
+    <navPoint id="007" class="h1" playOrder="7">
+      <navLabel>
+        <text>Exhibit B</text>
+      </navLabel>
+      <content src="exhibitb.xhtml" />
     </navPoint>
   </navMap>
 </ncx>
