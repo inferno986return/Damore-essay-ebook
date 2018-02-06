@@ -31,6 +31,7 @@ with open("metadata.json") as json_file:
 
     #Manifest tags
     opf.write(' <manifest>\n')
+    opf.write(' <item href="' + data["cssFilePath"] + '" id="css" media-type="text/css"/>')
     opf.write('  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>\n')
     opf.write('  <item href="images/' + data["epubCover"] +'" id="main_cover_image" media-type="image/jpeg"/>\n')
 
@@ -40,9 +41,9 @@ with open("metadata.json") as json_file:
     currentpage = 0
     totalpages = len(data["pages"]) #Number of pages
 
-    while (currentpage <= totalpages):
+    while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
         opf.write('   <item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
-        currentpage = currentpage + 1
+        currentpage += 1
 
     opf.write(' </manifest>\n')
 
@@ -50,14 +51,11 @@ with open("metadata.json") as json_file:
     opf.write(' <spine toc="ncx">\n')
     opf.write('  <itemref idref="cover"/>\n')
 
-    #Need to increment for each page.
-    print (data["pages"])
-
-    #currentpage = 0
-    #while (currentpage <= totalpages):
-        #opf.write('  <itemref idref="'+ pagecount +'"/>\n')
-        #currentpage = currentpage + 1
-
+    #Write out all the pagenumbers in order as declared in the JSON.
+    currentpage = 0
+    while currentpage != totalpages:
+        opf.write('  <itemref idref="'+ data["pages"][currentpage]["pageNumber"] +'"/>\n')
+        currentpage += 1
 
     opf.write(' </spine>\n')
 

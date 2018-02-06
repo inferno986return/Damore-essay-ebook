@@ -8,6 +8,7 @@
 		"epubVersion": "2.0.1",
 		"textPresentation": "Reflowable",
 		"generateKindle": "no",
+		"cssFilePath": "styles/zstylesheet.css",
 
 		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion",
@@ -74,6 +75,5 @@
 						"pageName": "Exhibit B",
 						"fileName": "exhibitb.xhtml"
 					}
-
 				]
 }
