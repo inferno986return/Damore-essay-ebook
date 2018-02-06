@@ -1,7 +1,7 @@
 #GenMetadata.py - Generates the content.opf and toc.ncx files from the metadata.json file.
 
-#opf = "EBOOK/content.opf"
-#ncx = "EBOOK/toc.ncx"
+#opf = "OEBPS/content.opf"
+#ncx = "OEBPS/toc.ncx"
 
 #JSON extraction magic
 
@@ -12,7 +12,7 @@ with open("metadata.json") as json_file:
     data = json.load((json_file), object_pairs_hook=OrderedDict) #For some reason the order is randomised, this preserves the order.
 
 #Create a compatible content.opf from scratch.
-def GenOPF():
+#def GenOPF():
 
     opf = open("content.opf", "w")
     opf.write('<?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">\n')
@@ -33,31 +33,31 @@ def GenOPF():
     opf.write(' <manifest>\n')
     opf.write('  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>\n')
     opf.write('  <item href="images/' + data["epubCover"] +'" id="main_cover_image" media-type="image/jpeg"/>\n')
-    
+
     #Write out all the pages in the book.
     #Count all the instances within the pages block.
 
-    #currentpage = 0
-    #totalpages = #Number of pages
-   
-    #while (totalpages < currentpage):
-        #opf.write('   <item href="" id="" media-type="application/xhtml+xml"/>\n')
-        #currentpage = currentpage + 1
-    
+    currentpage = 0
+    totalpages = len(data["pages"]) #Number of pages
+
+    while (currentpage <= totalpages):
+        opf.write('   <item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
+        currentpage = currentpage + 1
+
     opf.write(' </manifest>\n')
 
     #Spine tags
-    opf.write(' <spine toc="ncx">\n')  
+    opf.write(' <spine toc="ncx">\n')
     opf.write('  <itemref idref="cover"/>\n')
 
     #Need to increment for each page.
     print (data["pages"])
-    
+
     #currentpage = 0
-    #while (totalpages < currentpage):
+    #while (currentpage <= totalpages):
         #opf.write('  <itemref idref="'+ pagecount +'"/>\n')
         #currentpage = currentpage + 1
-    
+
 
     opf.write(' </spine>\n')
 
@@ -65,5 +65,5 @@ def GenOPF():
     opf.write('</package>')
 
     opf.close()
-    
-GenOPF()
+
+#GenOPF()
