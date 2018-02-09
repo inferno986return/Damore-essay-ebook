@@ -145,14 +145,13 @@ def GenNCX():
     index = 1
     totalpages = len(data["pages"]) #Number of pages
 
-    while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
-        #opf.write('\t\t<item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
+    while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON, indendation currently unsupported (data["pages"][currentpage]["indentation"]. 
         
         ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" class="h' + str(index) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
         ncx.write('\t\t<navLabel>\n')
         ncx.write('\t\t\t<text>' + data["pages"][currentpage]["pageName"] + '</text>\n')
         ncx.write('\t\t</navLabel>\n')
-        ncx.write('\t\t<content src="'+ data["pages"][currentpage]["fileName"] +'" />\n') #title.xhtml
+        ncx.write('\t\t<content src="'+ data["pages"][currentpage]["fileName"] +'" />\n')
         ncx.write('\t</navPoint>\n')
 
         currentpage += 1
