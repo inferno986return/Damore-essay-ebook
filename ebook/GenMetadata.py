@@ -28,6 +28,15 @@ with open("metadata.json") as json_file:
     opf.write('  <dc:language>' + data["language"] + '</dc:language>\n')
     opf.write('  <dc:rights>' + data["rights"] + '</dc:rights>\n')
     opf.write('  <meta content="main_cover_image" name="cover"/>\n')
+
+    #Fixed (non-reflowable) support
+    if data["textPresentation"] == "Reflowable" or "reflowable":
+        print('e-book type: Reflowable')
+        
+    elif data["textPresentation"] == "Fixed layout" or "Fixed Layout" or "fixed layout" or "fixed":
+        opf.write('  <meta name="fixed-layout" content="true"/>\n')
+        print('e-book type: Fixed layout')
+    
     opf.write(' </metadata>\n')
 
     #Manifest tags
@@ -73,6 +82,20 @@ with open("metadata.json") as json_file:
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
         opf.write('  <item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
         currentpage += 1
+        
+    #Write out all the custom fonts in the book.
+
+    fontindex = 0
+
+    for subdir, dirs, files in os.walk(data["containerFolder"] + os.sep + data["fontsFolder"]):
+        for file in files:
+            filepath = subdir + os.sep + file
+            correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
+
+            if filepath.endswith(".ttf") or filepath.endswith(".otf") or filepath.endswith(".woff"):
+                opf.write('  <item href="' + correctfilepath + '" id="font' + str(fontindex) + '" media-type="application/vnd.ms-opentype"/>\n')
+                print (filepath)
+                imageindex += 1
 
     opf.write(' </manifest>\n')
 
