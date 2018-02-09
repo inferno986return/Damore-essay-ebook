@@ -140,7 +140,7 @@ def GenNCX():
         maxdepth = max(indentations)
         currentpage += 1
     
-    ncx.write('\t<meta name="dtb:depth" content="' + str(maxdepth) + '" />\n') #2
+    ncx.write('\t<meta name="dtb:depth" content="' + str(maxdepth) + '" />\n')
     ncx.write('\t<meta name="dtb:totalPageCount" content="0" />\n')
     ncx.write('\t<meta name="dtb:maxPageNumber" content="0" />\n')
     ncx.write('</head>\n')
@@ -158,8 +158,8 @@ def GenNCX():
     totalpages = len(data["pages"]) #Number of pages
 
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON, indendation currently unsupported (data["pages"][currentpage]["indentation"]. 
-        
-        ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" class="h' + str(index) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
+    
+        ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
         ncx.write('\t\t<navLabel>\n')
         ncx.write('\t\t\t<text>' + data["pages"][currentpage]["pageName"] + '</text>\n')
         ncx.write('\t\t</navLabel>\n')

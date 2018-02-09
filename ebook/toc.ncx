@@ -10,55 +10,55 @@
 	<text>Google's Idealogical Echochamber</text>
 </docTitle>
 <navMap>
-	<navPoint id="navpoint-0" class="h1" playOrder="1">
+	<navPoint id="navpoint-0" playOrder="1">
 		<navLabel>
 			<text>Cover</text>
 		</navLabel>
 		<content src="bookcover.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-1" class="h2" playOrder="2">
+	<navPoint id="navpoint-1" playOrder="2">
 		<navLabel>
 			<text>Title</text>
 		</navLabel>
 		<content src="title.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-2" class="h3" playOrder="3">
+	<navPoint id="navpoint-2" playOrder="3">
 		<navLabel>
 			<text>Indicia</text>
 		</navLabel>
 		<content src="indicia.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-3" class="h4" playOrder="4">
+	<navPoint id="navpoint-3" playOrder="4">
 		<navLabel>
 			<text>License</text>
 		</navLabel>
 		<content src="license.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-4" class="h5" playOrder="5">
+	<navPoint id="navpoint-4" playOrder="5">
 		<navLabel>
 			<text>Contents</text>
 		</navLabel>
 		<content src="toc.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-5" class="h6" playOrder="6">
+	<navPoint id="navpoint-5" playOrder="6">
 		<navLabel>
 			<text>Foreword</text>
 		</navLabel>
 		<content src="foreword.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-6" class="h7" playOrder="7">
+	<navPoint id="navpoint-6" playOrder="7">
 		<navLabel>
 			<text>Lawsuit</text>
 		</navLabel>
 		<content src="lawsuit.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-7" class="h8" playOrder="8">
+	<navPoint id="navpoint-7" playOrder="8">
 		<navLabel>
 			<text>Exhibit A</text>
 		</navLabel>
 		<content src="exhibita.xhtml" />
 	</navPoint>
-	<navPoint id="navpoint-8" class="h9" playOrder="9">
+	<navPoint id="navpoint-8" playOrder="9">
 		<navLabel>
 			<text>Exhibit B</text>
 		</navLabel>
