@@ -1,16 +1,21 @@
 {
 		"comment1": "Metadata.json - Insert the e-book's metadata here. WIP",
 
-		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
+		"comment2": "Folder metadata - This contains the names of the technical folders, if you change the default names please update them here.",
+		"containerFolder": "OEBPS",
+		"cssFolder": "styles",
+		"imagesFolder": "images",
+		"fontsFolder": "fonts",
+
+		"comment3": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
 		"epubCover": "cover.jpg",
 		"mobiCover": "cover.jpg",
 		"fileName": "IdealogicalEcho",
 		"epubVersion": "2.0.1",
 		"textPresentation": "Reflowable",
 		"generateKindle": "no",
-		"cssFilePath": "styles/zstylesheet.css",
 
-		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
+		"comment4": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion",
 		"creator": "James Damore",
 		"subject": "Academic",
@@ -19,7 +24,7 @@
 		"language": "en",
 		"rights": "Creative Commons BY-SA 4.0",
 
-		"comment4": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation, third is the page name and fourth is file itself.",
+		"comment5": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation, third is the page name and fourth is file itself.",
 		"pages": [
 					{
 						"pageNumber": "0",

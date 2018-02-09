@@ -5,6 +5,7 @@
 
 #JSON extraction magic
 
+import os
 import json
 from collections import OrderedDict
 
@@ -31,9 +32,37 @@ with open("metadata.json") as json_file:
 
     #Manifest tags
     opf.write(' <manifest>\n')
-    opf.write(' <item href="' + data["cssFilePath"] + '" id="css" media-type="text/css"/>')
+
+    #Write out the CSS files
+    cssindex = 0
+
+    for subdir, dirs, files in os.walk(data["containerFolder"] + os.sep + data["cssFolder"]):
+        for file in files:
+            filepath = subdir + os.sep + file
+            correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
+
+            if filepath.endswith(".css"):
+                opf.write('  <item href="' + correctfilepath + '" id="css' + str(cssindex) + '" media-type="text/css"/>\n')
+                print (filepath)
+                cssindex += 1           
+
+    #Write out the NCX and cover image files
     opf.write('  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>\n')
-    opf.write('  <item href="images/' + data["epubCover"] +'" id="main_cover_image" media-type="image/jpeg"/>\n')
+    opf.write('  <item href="'+ data["imagesFolder"] + '/' + data["epubCover"] +'" id="main_cover_image" media-type="image/jpeg"/>\n')
+
+    #Write out the images
+
+    imageindex = 0
+
+    for subdir, dirs, files in os.walk(data["containerFolder"] + os.sep + data["imagesFolder"]):
+        for file in files:
+            filepath = subdir + os.sep + file
+            correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
+
+            if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".png") or filepath.endswith(".gif") or filepath.endswith(".svg"):
+                opf.write('  <item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/jpeg"/>\n')
+                print (filepath)
+                imageindex += 1
 
     #Write out all the pages in the book.
     #Count all the instances within the pages block.
@@ -42,7 +71,7 @@ with open("metadata.json") as json_file:
     totalpages = len(data["pages"]) #Number of pages
 
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
-        opf.write('   <item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
+        opf.write('  <item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
         currentpage += 1
 
     opf.write(' </manifest>\n')
@@ -53,6 +82,7 @@ with open("metadata.json") as json_file:
 
     #Write out all the pagenumbers in order as declared in the JSON.
     currentpage = 0
+    
     while currentpage != totalpages:
         opf.write('  <itemref idref="'+ data["pages"][currentpage]["pageNumber"] +'"/>\n')
         currentpage += 1
