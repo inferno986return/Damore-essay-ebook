@@ -17,6 +17,7 @@
 
 		"comment4": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion",
+		"titleShort": "Google's Idealogical Echochamber",
 		"creator": "James Damore",
 		"subject": "Academic",
 		"publisher": "Hal Motley",
