@@ -15,69 +15,70 @@
 		"textPresentation": "Reflowable",
 		"generateKindle": "no",
 
-		"comment4": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
+		"comment4": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion",
 		"titleShort": "Google's Idealogical Echochamber",
 		"creator": "James Damore",
 		"subject": "Academic",
 		"publisher": "Hal Motley",
 		"ISBN": "-",
+		"ASIN": "-",
 		"language": "en",
 		"rights": "Creative Commons BY-SA 4.0",
 
-		"comment5": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation, third is the page name and fourth is file itself.",
+		"comment5": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation (default is 1, allowed upto 4), third is the page name and fourth is file itself.",
 		"pages": [
 					{
 						"pageNumber": "0",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Cover",
 						"fileName": "bookcover.xhtml"
 					},
 					{
 						"pageNumber": "1",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Title",
 						"fileName": "title.xhtml"
 					},
 					{
 						"pageNumber": "2",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Indicia",
 						"fileName": "indicia.xhtml"
 					},
 					{
 						"pageNumber": "3",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "License",
 						"fileName": "license.xhtml"
 					},
 					{
 						"pageNumber": "4",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Contents",
 						"fileName": "toc.xhtml"
 					},
 					{
 						"pageNumber": "5",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Foreword",
 						"fileName": "foreword.xhtml"
 					},
 					{
 						"pageNumber": "6",
-						"indentation": "0",
+						"indentation": "1",
 						"pageName": "Lawsuit",
 						"fileName": "lawsuit.xhtml"
 					},
 					{
 						"pageNumber": "7",
-						"indentation": "1",
+						"indentation": "2",
 						"pageName": "Exhibit A",
 						"fileName": "exhibita.xhtml"
 					},
 					{
 						"pageNumber": "8",
-						"indentation": "1",
+						"indentation": "2",
 						"pageName": "Exhibit B",
 						"fileName": "exhibitb.xhtml"
 					}

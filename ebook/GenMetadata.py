@@ -127,8 +127,20 @@ def GenNCX():
 
     #Head tags
     ncx.write('<head>\n')
-    ncx.write('\t<meta name="dtb:uid" content="-" />\n')
-    ncx.write('\t<meta name="dtb:depth" content="1" />\n')
+    ncx.write('\t<meta name="dtb:uid" content="' + data["ISBN"] + '" />\n') #Has to be the same as dc:identifier.
+
+    #Declare the maximum amount of indentation from 1 to 4.
+    
+    indentations = [] #Assemble a Python list (array) with all the indentations and take the largest number.
+    currentpage = 0
+    totalpages = len(data["pages"]) #Number of pages
+    
+    while currentpage != totalpages: 
+        indentations.append(data["pages"][currentpage]["indentation"])
+        maxdepth = max(indentations)
+        currentpage += 1
+    
+    ncx.write('\t<meta name="dtb:depth" content="' + str(maxdepth) + '" />\n') #2
     ncx.write('\t<meta name="dtb:totalPageCount" content="0" />\n')
     ncx.write('\t<meta name="dtb:maxPageNumber" content="0" />\n')
     ncx.write('</head>\n')
