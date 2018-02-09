@@ -15,7 +15,7 @@ with open("metadata.json") as json_file:
 #Create a compatible content.opf from scratch.
 def GenOPF():
 
-    opf = open("content.opf", "w")
+    opf = open(data["containerFolder"] + os.sep + "content.opf", "w")
     opf.write('<?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">\n')
 
     #Metadata tags
@@ -78,9 +78,12 @@ def GenOPF():
 
     currentpage = 0
     totalpages = len(data["pages"]) #Number of pages
-
+    
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
-        opf.write('\t\t<item href="' + data["pages"][currentpage]["fileName"] + '" id="' + str.lower(data["pages"][currentpage]["pageName"]) + '" media-type="application/xhtml+xml"/>\n')
+        pageid = str.lower(data["pages"][currentpage]["pageName"]) #remove capital letters and spaces from the id attribute (works with Unicode)
+        correctpageid = pageid.replace(" ","_")
+        
+        opf.write('\t\t<item href="' + data["pages"][currentpage]["fileName"] + '" id="' + correctpageid + '" media-type="application/xhtml+xml"/>\n')
         currentpage += 1
         
     #Write out all the custom fonts in the book.
@@ -120,7 +123,7 @@ def GenOPF():
 #Create a compatible toc.ncx from scratch.
 def GenNCX():
    
-    ncx = open("toc.ncx", "w")
+    ncx = open(data["containerFolder"] + os.sep + "toc.ncx", "w")
     
     ncx.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
     ncx.write('<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">\n')
