@@ -254,7 +254,7 @@ p.quote2
 	font-variant: small-caps;
 }
 
-.ul /*Underlines text*/
+.uli /*Underlines text*/
 {
 	text-decoration: underline;
 }
@@ -323,6 +323,16 @@ td, th
 	margin-bottom: 1em;
 	margin-left: auto;
 	margin-right: auto;
+	width: 50%;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
+.image-left
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
 	width: 50%;
 	/*border: solid 2px; Useful for debugging.*/
 }

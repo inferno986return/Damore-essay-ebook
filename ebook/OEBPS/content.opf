@@ -12,37 +12,38 @@
 	<manifest>
 		<item href="styles/zstylesheet.css" id="css0" media-type="text/css"/>
 		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
-		<item href="images/cover.jpg" id="main_cover_image" media-type="image/jpeg"/>
 		<item href="images/blocklistcommentthread.png" id="image0" media-type="image/png"/>
 		<item href="images/chrislewisfiring.png" id="image1" media-type="image/png"/>
 		<item href="images/stephaniebadlist.png" id="image2" media-type="image/png"/>
 		<item href="images/nocurtisyarvin.png" id="image3" media-type="image/png"/>
 		<item href="images/chrislewisangry.png" id="image4" media-type="image/png"/>
-		<item href="images/joshresponse.png" id="image5" media-type="image/png"/>
-		<item href="images/cover.jpg" id="image6" media-type="image/jpeg"/>
-		<item href="images/kimburchettpost.png" id="image7" media-type="image/png"/>
-		<item href="images/stevejohnsonvindictive.png" id="image8" media-type="image/png"/>
-		<item href="images/gplusandycarrel.png" id="image9" media-type="image/png"/>
-		<item href="images/exhibitb/trumpregime.png" id="image10" media-type="image/png"/>
-		<item href="images/exhibitb/axelwagnerpost.png" id="image11" media-type="image/png"/>
-		<item href="images/exhibitb/defendingnordicsocialism.png" id="image12" media-type="image/png"/>
-		<item href="images/exhibitb/conservativevalues.png" id="image13" media-type="image/png"/>
-		<item href="images/exhibitb/brianswetlandpost.png" id="image14" media-type="image/png"/>
-		<item href="images/exhibitb/notrumpkermit.png" id="image15" media-type="image/png"/>
-		<item href="images/exhibitb/pulpfictionbigots.png" id="image16" media-type="image/png"/>
-		<item href="images/exhibitb/lehmann.png" id="image17" media-type="image/png"/>
-		<item href="images/exhibitb/alienateconservatives.png" id="image18" media-type="image/png"/>
-		<item href="images/exhibitb/xalecomment.png" id="image19" media-type="image/png"/>
-		<item href="images/exhibitb/alonaltmanpost.png" id="image20" media-type="image/png"/>
-		<item href="images/exhibitb/corporationfoetus.png" id="image21" media-type="image/png"/>
-		<item href="images/exhibitb/trumpregime2.png" id="image22" media-type="image/png"/>
-		<item href="images/exhibitb/diversitymoreyouknow.png" id="image23" media-type="image/png"/>
-		<item href="images/exhibitb/stupidpeople.png" id="image24" media-type="image/png"/>
-		<item href="images/exhibitb/conservativechristianity.png" id="image25" media-type="image/png"/>
-		<item href="images/exhibitb/johnboehner.png" id="image26" media-type="image/png"/>
-		<item href="images/exhibitb/republicantheists.png" id="image27" media-type="image/png"/>
-		<item href="images/exhibitb/trumpgooglegroup.png" id="image28" media-type="image/png"/>
-		<item href="images/exhibita/graph.jpg" id="image29" media-type="image/jpeg"/>
+		<item href="images/by-sa.png" id="image5" media-type="image/png"/>
+		<item href="images/PD-icon.png" id="image6" media-type="image/png"/>
+		<item href="images/joshresponse.png" id="image7" media-type="image/png"/>
+		<item href="images/cover.jpg" id="image8" media-type="image/jpeg"/>
+		<item href="images/kimburchettpost.png" id="image9" media-type="image/png"/>
+		<item href="images/stevejohnsonvindictive.png" id="image10" media-type="image/png"/>
+		<item href="images/gplusandycarrel.png" id="image11" media-type="image/png"/>
+		<item href="images/exhibitb/trumpregime.png" id="image12" media-type="image/png"/>
+		<item href="images/exhibitb/axelwagnerpost.png" id="image13" media-type="image/png"/>
+		<item href="images/exhibitb/defendingnordicsocialism.png" id="image14" media-type="image/png"/>
+		<item href="images/exhibitb/conservativevalues.png" id="image15" media-type="image/png"/>
+		<item href="images/exhibitb/brianswetlandpost.png" id="image16" media-type="image/png"/>
+		<item href="images/exhibitb/notrumpkermit.png" id="image17" media-type="image/png"/>
+		<item href="images/exhibitb/pulpfictionbigots.png" id="image18" media-type="image/png"/>
+		<item href="images/exhibitb/lehmann.png" id="image19" media-type="image/png"/>
+		<item href="images/exhibitb/alienateconservatives.png" id="image20" media-type="image/png"/>
+		<item href="images/exhibitb/xalecomment.png" id="image21" media-type="image/png"/>
+		<item href="images/exhibitb/alonaltmanpost.png" id="image22" media-type="image/png"/>
+		<item href="images/exhibitb/corporationfoetus.png" id="image23" media-type="image/png"/>
+		<item href="images/exhibitb/trumpregime2.png" id="image24" media-type="image/png"/>
+		<item href="images/exhibitb/diversitymoreyouknow.png" id="image25" media-type="image/png"/>
+		<item href="images/exhibitb/stupidpeople.png" id="image26" media-type="image/png"/>
+		<item href="images/exhibitb/conservativechristianity.png" id="image27" media-type="image/png"/>
+		<item href="images/exhibitb/johnboehner.png" id="image28" media-type="image/png"/>
+		<item href="images/exhibitb/republicantheists.png" id="image29" media-type="image/png"/>
+		<item href="images/exhibitb/trumpgooglegroup.png" id="image30" media-type="image/png"/>
+		<item href="images/exhibita/graph.jpg" id="image31" media-type="image/jpeg"/>
 		<item href="bookcover.xhtml" id="front_cover" media-type="application/xhtml+xml"/>
 		<item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
 		<item href="indicia.xhtml" id="indicia" media-type="application/xhtml+xml"/>
