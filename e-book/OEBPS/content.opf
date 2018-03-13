@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Google's Idealogical Echochamber: How bias clouds our thinking about diversity and inclusion</dc:title>
+		<dc:creator>James Damore</dc:creator>
+		<dc:subject>Academic</dc:subject>
+		<dc:publisher>Hal Motley</dc:publisher>
+		<dc:identifier id="bookid">-</dc:identifier>
+		<dc:date>2018-03-10</dc:date>
+		<dc:language>en</dc:language>
+		<dc:rights>Creative Commons BY-SA 4.0</dc:rights>
+		<meta content="cover" name="cover"/>
+	</metadata>
+	<manifest>
+		<item href="styles/zstylesheet.css" id="css0" media-type="text/css"/>
+		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+		<item href="images/blocklistcommentthread.png" id="image0" media-type="image/png"/>
+		<item href="images/chrislewisfiring.png" id="image1" media-type="image/png"/>
+		<item href="images/cc-zero.png" id="image2" media-type="image/png"/>
+		<item href="images/stephaniebadlist.png" id="image3" media-type="image/png"/>
+		<item href="images/nocurtisyarvin.png" id="image4" media-type="image/png"/>
+		<item href="images/chrislewisangry.png" id="image5" media-type="image/png"/>
+		<item href="images/by-sa.png" id="image6" media-type="image/png"/>
+		<item href="images/PD-icon.png" id="image7" media-type="image/png"/>
+		<item href="images/joshresponse.png" id="image8" media-type="image/png"/>
+		<item href="images/cover.jpg" id="cover" media-type="image/jpeg"/>
+		<item href="images/kimburchettpost.png" id="image9" media-type="image/png"/>
+		<item href="images/stevejohnsonvindictive.png" id="image10" media-type="image/png"/>
+		<item href="images/gplusandycarrel.png" id="image11" media-type="image/png"/>
+		<item href="images/exhibitb/conservativechristianity.jpg" id="image12" media-type="image/jpeg"/>
+		<item href="images/exhibitb/notrumpkermit.jpg" id="image13" media-type="image/jpeg"/>
+		<item href="images/exhibitb/corporationfoetus.jpg" id="image14" media-type="image/jpeg"/>
+		<item href="images/exhibitb/xalecomment.jpg" id="image15" media-type="image/jpeg"/>
+		<item href="images/exhibitb/trumpgooglegroup.jpg" id="image16" media-type="image/jpeg"/>
+		<item href="images/exhibitb/trumpregime2.jpg" id="image17" media-type="image/jpeg"/>
+		<item href="images/exhibitb/alonaltmanpost.jpg" id="image18" media-type="image/jpeg"/>
+		<item href="images/exhibitb/conservativevalues.jpg" id="image19" media-type="image/jpeg"/>
+		<item href="images/exhibitb/diversitymoreyouknow.jpg" id="image20" media-type="image/jpeg"/>
+		<item href="images/exhibitb/alienateconservatives.jpg" id="image21" media-type="image/jpeg"/>
+		<item href="images/exhibitb/axelwagnerpost.jpg" id="image22" media-type="image/jpeg"/>
+		<item href="images/exhibitb/lehmann.jpg" id="image23" media-type="image/jpeg"/>
+		<item href="images/exhibitb/brianswetlandpost.jpg" id="image24" media-type="image/jpeg"/>
+		<item href="images/exhibitb/republicantheists.jpg" id="image25" media-type="image/jpeg"/>
+		<item href="images/exhibitb/stupidpeople.jpg" id="image26" media-type="image/jpeg"/>
+		<item href="images/exhibitb/trumpregime.jpg" id="image27" media-type="image/jpeg"/>
+		<item href="images/exhibitb/pulpfictionbigots.jpg" id="image28" media-type="image/jpeg"/>
+		<item href="images/exhibitb/defendingnordicsocialism.jpg" id="image29" media-type="image/jpeg"/>
+		<item href="images/exhibitb/johnboehner.jpg" id="image30" media-type="image/jpeg"/>
+		<item href="images/exhibita/graph.jpg" id="image31" media-type="image/jpeg"/>
+		<item href="bookcover.xhtml" id="front_cover" media-type="application/xhtml+xml"/>
+		<item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
+		<item href="indicia.xhtml" id="indicia" media-type="application/xhtml+xml"/>
+		<item href="license.xhtml" id="license" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="contents" media-type="application/xhtml+xml"/>
+		<item href="foreword.xhtml" id="foreword" media-type="application/xhtml+xml"/>
+		<item href="lawsuit.xhtml" id="lawsuit" media-type="application/xhtml+xml"/>
+		<item href="exhibita.xhtml" id="exhibit_a" media-type="application/xhtml+xml"/>
+		<item href="exhibitb.xhtml" id="exhibit_b" media-type="application/xhtml+xml"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="front_cover"/>
+		<itemref idref="title"/>
+		<itemref idref="indicia"/>
+		<itemref idref="license"/>
+		<itemref idref="contents"/>
+		<itemref idref="foreword"/>
+		<itemref idref="lawsuit"/>
+		<itemref idref="exhibit_a"/>
+		<itemref idref="exhibit_b"/>
+	</spine>
+</package>

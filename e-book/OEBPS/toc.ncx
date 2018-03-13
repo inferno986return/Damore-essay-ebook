@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+	<meta name="dtb:uid" content="-" />
+	<meta name="dtb:depth" content="2" />
+	<meta name="dtb:totalPageCount" content="0" />
+	<meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+	<text>Google's Idealogical Echochamber</text>
+</docTitle>
+<navMap>
+	<navPoint id="navpoint-1" playOrder="1">
+		<navLabel>
+			<text>Front Cover</text>
+		</navLabel>
+		<content src="bookcover.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-2" playOrder="2">
+		<navLabel>
+			<text>Title</text>
+		</navLabel>
+		<content src="title.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-3" playOrder="3">
+		<navLabel>
+			<text>Indicia</text>
+		</navLabel>
+		<content src="indicia.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-4" playOrder="4">
+		<navLabel>
+			<text>License</text>
+		</navLabel>
+		<content src="license.xhtml" />
+		<navPoint id="navpoint-5" playOrder="5">
+				<navLabel>
+					<text>Content license</text>
+				</navLabel>
+				<content src="license.xhtml#content-license" />
+		</navPoint>
+		<navPoint id="navpoint-6" playOrder="6">
+				<navLabel>
+					<text>E-book license</text>
+				</navLabel>
+				<content src="license.xhtml#ebook-license" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-7" playOrder="7">
+		<navLabel>
+			<text>Contents</text>
+		</navLabel>
+		<content src="toc.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-8" playOrder="8">
+		<navLabel>
+			<text>Foreword</text>
+		</navLabel>
+		<content src="foreword.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-9" playOrder="9">
+		<navLabel>
+			<text>Lawsuit</text>
+		</navLabel>
+		<content src="lawsuit.xhtml" />
+		<navPoint id="navpoint-10" playOrder="10">
+				<navLabel>
+					<text>Google Provides Internal Tools to Facilitate Blacklisting</text>
+				</navLabel>
+				<content src="lawsuit.xhtml#internal-tools" />
+		</navPoint>
+		<navPoint id="navpoint-11" playOrder="11">
+				<navLabel>
+					<text>Google Maintains Secret Blacklists of Conservative Authors</text>
+				</navLabel>
+				<content src="lawsuit.xhtml#blacklist" />
+		</navPoint>
+		<navPoint id="navpoint-12" playOrder="12">
+				<navLabel>
+					<text>Google Allowed Employees to Intimidate Conservatives with Threats of Termination</text>
+				</navLabel>
+				<content src="lawsuit.xhtml#termination" />
+		</navPoint>
+		<navPoint id="navpoint-13" playOrder="13">
+				<navLabel>
+					<text>Google Was Unable to Respond to Logical Arguments</text>
+				</navLabel>
+				<content src="lawsuit.xhtml#logical" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-14" playOrder="14">
+		<navLabel>
+			<text>Exhibit A</text>
+		</navLabel>
+		<content src="exhibita.xhtml" />
+		<navPoint id="navpoint-15" playOrder="15">
+				<navLabel>
+					<text>Reply to public response and misrepresentation</text>
+				</navLabel>
+				<content src="exhibita.xhtml#reply" />
+		</navPoint>
+		<navPoint id="navpoint-16" playOrder="16">
+				<navLabel>
+					<text>TL;DR</text>
+				</navLabel>
+				<content src="exhibita.xhtml#tldr" />
+		</navPoint>
+		<navPoint id="navpoint-17" playOrder="17">
+				<navLabel>
+					<text>Background</text>
+				</navLabel>
+				<content src="exhibita.xhtml#background" />
+		</navPoint>
+		<navPoint id="navpoint-18" playOrder="18">
+				<navLabel>
+					<text>Google's biases</text>
+				</navLabel>
+				<content src="exhibita.xhtml#bias" />
+		</navPoint>
+		<navPoint id="navpoint-19" playOrder="19">
+				<navLabel>
+					<text>Possible non-bias causes of the gender gap in tech</text>
+				</navLabel>
+				<content src="exhibita.xhtml#possible" />
+		</navPoint>
+		<navPoint id="navpoint-20" playOrder="20">
+				<navLabel>
+					<text>Personality differences</text>
+				</navLabel>
+				<content src="exhibita.xhtml#personality" />
+		</navPoint>
+		<navPoint id="navpoint-21" playOrder="21">
+				<navLabel>
+					<text>Men’s higher drive for status</text>
+				</navLabel>
+				<content src="exhibita.xhtml#drive" />
+		</navPoint>
+		<navPoint id="navpoint-22" playOrder="22">
+				<navLabel>
+					<text>Non-discriminatory ways to reduce the gender gap</text>
+				</navLabel>
+				<content src="exhibita.xhtml#reduce" />
+		</navPoint>
+		<navPoint id="navpoint-23" playOrder="23">
+				<navLabel>
+					<text>The harm of Google’s biases</text>
+				</navLabel>
+				<content src="exhibita.xhtml#harm" />
+		</navPoint>
+		<navPoint id="navpoint-24" playOrder="24">
+				<navLabel>
+					<text>Why we’re blind</text>
+				</navLabel>
+				<content src="exhibita.xhtml#blind" />
+		</navPoint>
+		<navPoint id="navpoint-25" playOrder="25">
+				<navLabel>
+					<text>Suggestions</text>
+				</navLabel>
+				<content src="exhibita.xhtml#suggest" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-26" playOrder="26">
+		<navLabel>
+			<text>Exhibit B</text>
+		</navLabel>
+		<content src="exhibitb.xhtml" />
+		<navPoint id="navpoint-27" playOrder="27">
+				<navLabel>
+					<text>Anti-conservative postings</text>
+				</navLabel>
+				<content src="exhibitb.xhtml#anti-conservative" />
+		</navPoint>
+		<navPoint id="navpoint-28" playOrder="28">
+				<navLabel>
+					<text>Google endorsing political violence</text>
+				</navLabel>
+				<content src="exhibitb.xhtml#endorsing-violence" />
+		</navPoint>
+		<navPoint id="navpoint-29" playOrder="29">
+				<navLabel>
+					<text>Anti-Caucasian postings</text>
+				</navLabel>
+				<content src="exhibitb.xhtml#anti-caucasian" />
+		</navPoint>
+		<navPoint id="navpoint-30" playOrder="30">
+				<navLabel>
+					<text>Googler reactions to the Damore memo</text>
+				</navLabel>
+				<content src="exhibitb.xhtml#reactions" />
+		</navPoint>
+		<navPoint id="navpoint-31" playOrder="31">
+				<navLabel>
+					<text>Appendix</text>
+				</navLabel>
+				<content src="exhibitb.xhtml#appendix" />
+		</navPoint>
+	</navPoint>
+</navMap>
+</ncx>
