@@ -10,6 +10,7 @@
 #JSON extraction magic
 
 import os
+import time
 import json
 from collections import OrderedDict
 
@@ -29,17 +30,21 @@ def GenOPF():
     opf.write('\t\t<dc:subject>' + data["subject"] + '</dc:subject>\n')
     opf.write('\t\t<dc:publisher>' + data["publisher"] + '</dc:publisher>\n')
     opf.write('\t\t<dc:identifier id="bookid">' + data["ISBN"] + '</dc:identifier>\n')
+    #opf.write('\t\t<dc:date>' + (time.strftime("%m-%d-%Y")) + '</dc:date>\n')
     opf.write('\t\t<dc:language>' + data["language"] + '</dc:language>\n')
     opf.write('\t\t<dc:rights>' + data["rights"] + '</dc:rights>\n')
     opf.write('\t\t<meta content="main_cover_image" name="cover"/>\n')
 
     #Fixed (non-reflowable) support
-    if data["textPresentation"] == "Reflowable" or "reflowable":
+    if (data["textPresentation"] == "Reflowable" or data["textPresentation"] == "reflowable" or data["textPresentation"] == "reflow"):
         print('e-book type: Reflowable')
         
-    elif data["textPresentation"] == "Fixed layout" or "Fixed Layout" or "fixed layout" or "fixed":
+    elif (data["textPresentation"] == "Fixed layout" or data["textPresentation"] == "Fixed Layout" or data["textPresentation"] == "fixed layout" or data["textPresentation"] == "fixed"):
         opf.write('\t\t<meta name="fixed-layout" content="true"/>\n')
         print('e-book type: Fixed layout')
+
+    else:
+        print('Invalid textPresentation in metadata.json.')
     
     opf.write('\t</metadata>\n')
 
@@ -216,6 +221,31 @@ def GenEpub():
     with open('metadata.json') as json_file:
         data = json.load(json_file)
 
+    #Generate the mimetype.
+    mime = open("mimetype", "w")
+    
+    mime.write('application/epub+zip')
+
+    mime.close()
+
+    #Generate the META-INF.
+    try:
+        os.stat('META-INF')
+
+    except:
+        os.mkdir('META-INF') #If META-INF folder doesn't exist, make one.
+        
+    metainf = open('META-INF' + os.sep + "container.xml", "w")
+
+    metainf.write('<?xml version="1.0"?>\n')
+    metainf.write('<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">\n')
+    metainf.write('\t<rootfiles>\n')
+    metainf.write('\t\t<rootfile full-path="' + data["containerFolder"] + '/content.opf" media-type="application/oebps-package+xml" />\n')
+    metainf.write('\t</rootfiles>\n')
+    metainf.write('</container>')
+
+    metainf.close()
+
     #The ePub standard requires deflated compression and a compression order.
     zf = zipfile.ZipFile(data["fileName"] + '.epub', mode='w', compression=zipfile.ZIP_STORED)
 
@@ -224,16 +254,18 @@ def GenEpub():
     for dirname, subdirs, files in os.walk('META-INF'):
         zf.write(dirname)
         for filename in files:
-            zf.write(os.path.join(dirname, filename))
-            print('dirname:' + dirname)
-            print('filename:' + filename)
+            if filename != '.DS_Store': #epubcheck hates uninvited files and macOS places these everywhere.
+                zf.write(os.path.join(dirname, filename))
+                print('dirname:' + dirname)
+                print('filename:' + filename)
 
-    for dirname, subdirs, files in os.walk('OEBPS'):
+    for dirname, subdirs, files in os.walk(data["containerFolder"]):
         zf.write(dirname)
         for filename in files:
-            zf.write(os.path.join(dirname, filename))
-            print('dirname:' + dirname)
-            print('filename:' + filename)
+            if filename != '.DS_Store': #epubcheck hates uninvited files.
+                zf.write(os.path.join(dirname, filename))
+                print('dirname:' + dirname)
+                print('filename:' + filename)
 
     zf.close()
 
