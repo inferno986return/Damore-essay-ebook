@@ -57,6 +57,17 @@ h4.title
 	text-align: center;
 }
 
+/*Indicia Headings*/
+
+h1.indicia-heading
+{
+	text-align: center;
+	font-size: 0.9em; /*small works best here rather than a specific em*/
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
 /*Chapter Headings*/
 
 h1.section
@@ -152,6 +163,15 @@ p
 	text-align: justify;
 	text-indent: 1em;
 	hyphens: none;
+}
+
+p.indicia, .indicia
+{
+	font-size: 0.8em; /*0.8em or small*/
+	text-align: center !important;
+	text-indent: 0em !important;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .small
@@ -346,9 +366,6 @@ td, th
 {
 	margin-top: 1em;
 	margin-bottom: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
 	/*border: solid 2px; Useful for debugging.*/
 }
 
@@ -365,7 +382,7 @@ td, th
 .image
 {
 	display: block;
-	margin:auto;
+	margin: auto;
 	/*border: solid red 1px;*/
 }
 
