@@ -74,24 +74,6 @@
 					},
 					{
 						"pageNumber": "6",
-						"indentation": "1",
-						"pageName": "Lawsuit",
-						"fileName": "lawsuit.xhtml",
-						"anchorNames": {
-							"anchorName0": "Google Provides Internal Tools to Facilitate Blacklisting",
-							"anchorName1": "Google Maintains Secret Blacklists of Conservative Authors",
-							"anchorName2": "Google Allowed Employees to Intimidate Conservatives with Threats of Termination",
-							"anchorName3": "Google Was Unable to Respond to Logical Arguments"
-						},
-						"anchorLinks": {
-							"anchorLink0": "#internal-tools",
-							"anchorLink1": "#blacklist",
-							"anchorLink2": "#termination",
-							"anchorLink3": "#logical"
-						}
-					},
-					{
-						"pageNumber": "7",
 						"indentation": "2",
 						"pageName": "Exhibit A",
 						"fileName": "exhibita.xhtml",
@@ -120,26 +102,6 @@
 							"anchorLink8": "#harm",
 							"anchorLink9": "#blind",
 							"anchorLink10": "#suggest"
-						}
-					},
-					{
-						"pageNumber": "8",
-						"indentation": "2",
-						"pageName": "Exhibit B",
-						"fileName": "exhibitb.xhtml",
-						"anchorNames": {
-							"anchorName0": "Anti-conservative postings",
-							"anchorName1": "Google endorsing political violence",
-							"anchorName2": "Anti-Caucasian postings",
-							"anchorName3": "Googler reactions to the Damore memo",
-							"anchorName4": "Appendix"
-						},
-						"anchorLinks": {
-							"anchorLink0": "#anti-conservative",
-							"anchorLink1": "#endorsing-violence",
-							"anchorLink2": "#anti-caucasian",
-							"anchorLink3": "#reactions",
-							"anchorLink4": "#appendix"
 						}
 					}
 				]
