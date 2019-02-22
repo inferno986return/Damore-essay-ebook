@@ -1,5 +1,5 @@
 Checksum values for IdealogicalEcho.epub
 =============================================
 
-MD5: 9b6e04ec0439ca1f16e73e0ecd7d2cc5
-SHA512: 1973568c4cf105cc6504d1c761fae859e5a13f4196e12a13ae51c380f097dde03bb30169b14991d956e0a016716d8207ee69e0ebd3baa5b4d35dfa9443979cf5
+MD5: 4203cd13ec6d9d06cc560e34d01b9f46
+SHA512: 90b338e440de322d3bb59e5bf24583b05c9f8cf81a72cd93ddad9f01b4efba5a16ec046aaa0bd59d273ce36686bb3264683c6abd9e3df37981fc5ef5199f021b

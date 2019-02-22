@@ -101,7 +101,7 @@
 		</navPoint>
 		<navPoint id="navpoint-16" playOrder="16">
 				<navLabel>
-					<text>Men’s higher drive for status</text>
+					<text>Menâ€™s higher drive for status</text>
 				</navLabel>
 				<content src="exhibita.xhtml#drive" />
 		</navPoint>
@@ -113,13 +113,13 @@
 		</navPoint>
 		<navPoint id="navpoint-18" playOrder="18">
 				<navLabel>
-					<text>The harm of Google’s biases</text>
+					<text>The harm of Googleâ€™s biases</text>
 				</navLabel>
 				<content src="exhibita.xhtml#harm" />
 		</navPoint>
 		<navPoint id="navpoint-19" playOrder="19">
 				<navLabel>
-					<text>Why we’re blind</text>
+					<text>Why weâ€™re blind</text>
 				</navLabel>
 				<content src="exhibita.xhtml#blind" />
 		</navPoint>
