@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#CreateE-book.py v0.811 - Generates an ePub file using data from the metadata.json.
+#CreateE-book.py v0.8111 - Generates an ePub file using data from the metadata.json.
 
 #This file is part of the ebookbuild project (also known as Project Zylon) which is licensed under GNU General Public License v3.0 (GNU GPLv3): https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -14,6 +14,17 @@ from collections import OrderedDict
 import re
 import zipfile
 import hashlib
+
+#Intro text
+print()
+print("================================================")
+print("ebookbuild, v0.8111 - Copyright (C) 2019 Hal Motley")
+print("https://www.github.com/inferno986return/ebookbuild/")
+print()
+print("This program comes with ABSOLUTELY NO WARRANTY, for details see GPL-3.txt.")
+print("This is free software and you are welcome to redistribute it under certain conditions.")
+print("================================================")
+print()
 
 #JSON extraction magic
 with open("metadata.json") as json_file:
